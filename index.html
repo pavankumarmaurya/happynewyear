@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year 🎆</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🎆 Fireworks Canvas -->
+  <canvas id="fireworks"></canvas>
+
+  <!-- 🎵 Background Music (JS se control hoga) -->
+  <audio id="bgMusic" loop></audio>
+
+  <!-- 🌟 Main Container -->
+  <div class="container">
+
+    <h1>🎉 Happy New Year 🎉</h1>
+    <p>Enter your name and enjoy a smart New Year wish 🎆</p>
+
+    <!-- Name Input -->
+    <input
+      type="text"
+      id="nameInput"
+      placeholder="Enter your name"
+      autocomplete="off"
+    >
+
+    <br><br>
+
+    <!-- Celebrate Button -->
+    <button onclick="startWish()">
+      Celebrate 🎆
+    </button>
+
+    <br><br>
+
+    <!-- 🔊 Voice Toggle -->
+    <label style="font-size:16px;">
+      <input type="checkbox" id="voiceToggle" checked>
+      🔊 Voice Greeting ON
+    </label>
+
+    <!-- Output Area -->
+    <div id="output"></div>
+
+    <!-- WhatsApp Share Button -->
+    <button
+      id="shareBtn"
+      onclick="share()"
+      style="display:none;"
+      
+    >
+      📤 Share on WhatsApp
+    </button>
+
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="fireworks.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
