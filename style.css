@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle, #020024, #090979, #00d4ff);
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  margin-top: 120px;
+}
+
+input {
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(56, 201, 12);
+  cursor: pointer;
+  box-shadow: 0 0 15px cyan;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 20px;
+}
